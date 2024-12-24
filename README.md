@@ -14,3 +14,11 @@ docker run
 -v /root/nginx//conf/conf.d:/etc/nginx/conf.d
 -v /root/nginx/ssl:/etc/nginx/ssl/  
 --privileged=true -d --restart=always nginx
+
+
+# 启动java项目
+java -jar chatgpt-api.jar
+
+# 查找java/nginx进程的命令
+ps -ef | grep java
+ps -ef | grep nginx
